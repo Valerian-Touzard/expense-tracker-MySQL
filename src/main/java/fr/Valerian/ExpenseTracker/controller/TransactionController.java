@@ -25,4 +25,9 @@ public class TransactionController {
     public List<Transaction> getAllTransaction() {
         return transactionService.getAllTransaction();
     }
+
+    @GetMapping("{id}")
+    public Transaction getOneTransaction(@RequestParam Long idTransaction) {
+        return transactionService.getOneTransaction(idTransaction);
+    }
 }
