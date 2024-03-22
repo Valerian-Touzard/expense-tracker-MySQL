@@ -25,4 +25,9 @@ public class TransactionServiceImp implements TransactionService{
     public List<Transaction> getAllTransaction() {
         return transactionRepository.findAll();
     }
+
+    @Override
+    public Transaction getOneTransaction(Long idTransaction) {
+        return transactionRepository.getReferenceById(idTransaction);
+    }
 }

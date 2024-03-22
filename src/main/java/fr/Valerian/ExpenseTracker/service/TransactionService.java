@@ -8,4 +8,6 @@ public interface TransactionService {
     Transaction add(Transaction transaction);
 
     List<Transaction> getAllTransaction();
+
+    Transaction getOneTransaction(Long idTransaction);
 }
